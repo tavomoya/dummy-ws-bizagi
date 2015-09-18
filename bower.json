@@ -1,0 +1,38 @@
+{
+  "name": "medicalcore",
+  "version": "3.0.0",
+  "main": "public/app/index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "private": true,
+  "dependencies": {
+    "angular-bootstrap": "0.11.x",
+    "angular-cookies": "1.4.0-rc.2",
+    "angular-dialog-service": "5.x.x",
+    "angular-md5": "~0.1.7",
+    "angular-resource": "1.4.0-rc.2",
+    "angular-scenario": "1.4.0-rc.2",
+    "angular-ui-router": "0.2.14",
+    "angular-ui-select": "~0.11.2",
+    "angular-ui-utils": "~0.2.3",
+    "angularjs-toaster": "~0.4.13",
+    "bootstrap-material-design": "0.2.0",
+    "es5-shim": "~2.1.0",
+    "font-awesome-animation": "~0.0.4",
+    "jquery-ui": "1.10.4",
+    "jquery": "1.11.1",
+    "json3": "~3.2.6",
+    "pace": "~0.5.1",
+    "selectize-ng": "~0.1.0",
+    "textAngular": "~1.2.2",
+    "tg-angular-validator": "~1.0.0",
+    "jQuery-Mask-Plugin": "~1.11.4",
+    "angular-animate": "1.4.0-rc.2",
+    "bootstrap": "3.1.1",
+    "angular-sanitize": "1.4.0-rc.2",
+    "angular-route": "1.4.0-rc.2",
+    "lodash": "~3.8.0",
+    "angular-bootstrap-lightbox": "~0.6.1"
+  }
+}
