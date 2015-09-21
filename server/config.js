@@ -1,30 +1,22 @@
 'use strict'
-// Gets your current enviroment [development|production]
-var enviroment = '';
+// Set your current enviroment [development|production]
+var enviroment = 'development';
+
+module.exports = function (app) {
+  app.set('config', config[enviroment]);
+}
 
 var config = {
   development: {
     publicPath: 'your/path/to/public',
     dbUrl: 'localhost:27017/test',
-    APP_PORT: process.env.PORT || 8080
+    appPort: process.env.PORT || 8080,
+    jwtSecret: 'your-password'
   },
   production: {
     publicPath: 'your/path/to/public',
     dbUrl: 'localhost:27017/test',
-    APP_PORT: process.env.PORT || 8080
+    appPort: process.env.PORT || 8080,
+    jwtSecret: 'your-password'
   }
 }
-
-function setEnviroment(app) {
-  enviroment = app.get('enviroment');
-  console.log( `[*] Enviroment: ${enviroment}`);
-  return config[enviroment];
-}
-
-function getEnviroment() {
-  return config[enviroment];
-}
-
-exports.getEnviroment = getEnviroment;
-
-exports.setEnviroment = setEnviroment;

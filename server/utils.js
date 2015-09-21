@@ -33,6 +33,14 @@ var inception = function(obj, path) {
   }, obj);
 };
 
+var cloneObject = function (object) {
+  var newObject = {};
+  for (var key in object) {
+    newObject[key] = (newObject[key]) ? newObject[key] : object[key];
+  };
+  return newObject;
+}
+
 var joinObjects = function(objTo, objFrom) {
   for (var i in objFrom) {
     objTo[i] = (objTo[i]) ? objTo[i] : objFrom[i];
@@ -68,6 +76,7 @@ exports.success = success;
 exports.failed = failed;
 exports.mongooseCallback = mongooseCallback;
 exports.inception = inception;
+exports.cloneObject = cloneObject;
 exports.joinObjects = joinObjects;
 exports.getLists = getLists;
 exports.goodResponse = goodResponse;
