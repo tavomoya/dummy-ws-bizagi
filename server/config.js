@@ -10,7 +10,7 @@ var config = {
   development: {
     publicPath: 'your/path/to/public',
     dbUrl: 'localhost:27017/test',
-    appPort: process.env.PORT || 8080,
+    appPort: process.env.PORT || 6969,
     jwtSecret: 'your-password'
   },
   production: {
