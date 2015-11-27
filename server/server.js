@@ -25,6 +25,7 @@ require('./routes/policy')(app);
 require('./routes/refund')(app);
 require('./routes/remittance')(app);
 require('./routes/reconcile')(app);
+require('./routes/claim')(app);
 // Routes
 
 app.use('*', function(req, res, next) {
