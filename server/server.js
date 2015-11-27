@@ -24,6 +24,7 @@ require('./routes/affiliate')(app);
 require('./routes/policy')(app);
 require('./routes/refund')(app);
 require('./routes/remittance')(app);
+require('./routes/reconcile')(app);
 // Routes
 
 app.use('*', function(req, res, next) {
